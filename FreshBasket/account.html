@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create account | FreshBasket</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✳</span>
+            FreshBasket
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="offers.html">Offers</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <a class="account-link active" href="account.html">
+                Account
+            </a>
+
+            <button class="cart-button" id="openCart">
+                Cart
+                <span id="cartCount" class="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CREATE ACCOUNT SECTION -->
+    <main class="auth-wrap">
+
+        <section class="auth-card">
+
+            <!-- LEFT SIDE -->
+            <div class="auth-side">
+
+                <span class="brand-mark large">✳</span>
+
+                <span class="eyebrow light">
+                    WELCOME TO FRESHBASKET
+                </span>
+
+                <h2>
+                    Fresh choices<br>
+                    start here.
+                </h2>
+
+                <p>
+                    Create an account to keep your shopping details
+                    in one place on this device.
+                </p>
+
+                <div class="auth-illustration">
+                    🥬　🍎　🥛
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: ACCOUNT FORM -->
+            <div class="auth-form-wrap">
+
+                <span class="eyebrow">
+                    GET STARTED
+                </span>
+
+                <h1>Create your account</h1>
+
+                <p class="muted">
+                    A few details and you're ready to shop.
+                </p>
+
+
+                <!-- REGISTRATION FORM -->
+                <form id="registerForm" class="form-stack">
+
+                    <!-- FULL NAME -->
+                    <label>
+                        Full name
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                            minlength="2"
+                        >
+                    </label>
+
+
+                    <!-- EMAIL -->
+                    <label>
+                        Email address
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </label>
+
+
+                    <!-- PASSWORD -->
+                    <label>
+                        Password
+
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="At least 6 characters"
+                            required
+                            minlength="6"
+                        >
+                    </label>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <label>
+                        Confirm password
+
+                        <input
+                            type="password"
+                            name="confirmPassword"
+                            placeholder="Re-enter password"
+                            required
+                            minlength="6"
+                        >
+                    </label>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <button
+                        class="button button-dark full-width"
+                        type="submit"
+                    >
+                        Create account →
+                    </button>
+
+
+                    <!-- FORM MESSAGE -->
+                    <p
+                        class="form-message"
+                        id="registerMessage"
+                        role="status"
+                    ></p>
+
+                </form>
+
+
+                <!-- LOGIN LINK -->
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="login.html">Log in</a>
+                </p>
+
+
+                <!-- SECURITY NOTICE -->
+                <small class="security-note">
+                    Demo only: account data is stored in this browser,
+                    not on a secure server.
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer reference-footer">
+
+        <div class="container footer-columns">
+
+            <!-- BRAND COLUMN -->
+            <section class="footer-brand-col">
+
+                <a class="footer-brand" href="index.html">
+                    FreshBasket
+                </a>
+
+                <p>
+                    We provide fresh and quality groceries.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+
+            </section>
+
+
+            <!-- LOCATION COLUMN -->
+            <section>
+
+                <h3>Our Location</h3>
+
+                <ul>
+                    <li>India</li>
+                    <li>USA</li>
+                    <li>France</li>
+                    <li>Japan</li>
+                    <li>Russia</li>
+                </ul>
+
+            </section>
+
+
+            <!-- QUICK LINKS COLUMN -->
+            <section>
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-quick">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="account.html">Profile Creation</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </section>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright">
+            Created By <strong>FreshBasket</strong> | All Rights Reserved!
+        </div>
+
+    </footer>
+
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- SHOPPING CART DRAWER -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-head">
+
+            <div>
+                <span class="eyebrow">YOUR BASKET</span>
+
+                <h2>
+                    Your cart
+                    <span id="drawerCount">(0)</span>
+                </h2>
+            </div>
+
+            <button id="closeCart" class="icon-button">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- CART PRODUCTS -->
+        <div id="cartItems" class="cart-items"></div>
+
+
+        <!-- EMPTY CART MESSAGE -->
+        <div id="cartEmpty" class="cart-empty">
+
+            <div>🧺</div>
+
+            <h3>Your basket is empty</h3>
+
+            <p>Add a few fresh favourites to get started.</p>
+
+        </div>
+
+
+        <!-- CART TOTAL -->
+        <div class="cart-bottom">
+
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">₹0</strong>
+            </div>
+
+            <button
+                class="button button-dark full-width"
+                id="checkoutBtn"
+            >
+                Continue to checkout →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast" role="status"></div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
